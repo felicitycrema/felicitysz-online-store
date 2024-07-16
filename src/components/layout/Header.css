@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: centre;
+  background-color: #131921;
+  color: #fff;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header a:hover,
+.header a:active {
+  color: #cd90#cd9042;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #cd9042;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #131921;
+}
+
+.logo:hover {
+  border: 1px solid #fff;
+}
+
+.location_icon {
+  padding: 7px 0px 0px 0px;
+  border: none;
+}
+.delivery_option {
+  display: flex;
+}
+
+.location_text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.header_search_all {
+  background-color: lightgrey;
+  border: none;
+  height: 40px;
+  padding: 5px;
+  width: 50px;
+  font-size: 14px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.header_searchIcon {
+  background-color: #febd69;
+  font-size: 14px;
+  height: 40px;
+  padding: 5px;
+  width: 50px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.header_searchIcon:hover {
+  background: #ffb24d;
+}
+
+.header_search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.header_input {
+  height: 40px;
+  padding: 5px;
+  width: 100%;
+}
+
+.header_option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 48px;
+  margin: 5px;
+  text-align: left;
+  font-size: 12px;
+  border: 1px solid #131921;
+}
+
+.header_option:hover {
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.header_optionOne {
+  display: flex;
+  flex-direction: column;
+  font-weight: lighter;
+}
+
+.header_optionTwo {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.header_optionBasket {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 48px;
+  margin: 5px;
+  text-align: left;
+  border: 1px solid #131921;
+}
+
+.header_optionBasket:hover {
+  border: 1px solid #fff;
+}
+
+.header_nav {
+  display: flex;
+}
