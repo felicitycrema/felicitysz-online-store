@@ -12,7 +12,7 @@ const Product = ({ id, image, title, rating, price }) => {
   };
 
   return (
-    <div className="product">
+    <div className="product" >
       <img src={image} alt="" />
       <div className="product_info">
         <p>{title}</p>
@@ -23,7 +23,7 @@ const Product = ({ id, image, title, rating, price }) => {
               <p key={i}>⭐</p>
             ))}
         </div>
-        <p className="product_price">{price}</p>
+        <p className="product_price">${price}</p>
       </div>
       <button className="product_button" onClick={addToBasketHandler}>
         Add to Basket

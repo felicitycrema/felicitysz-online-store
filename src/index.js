@@ -9,7 +9,7 @@ ReactDOM.render(
   <BrowserRouter>
     <ShoppingState>
       <App />
-    </ShoppingState>
+    </ShoppingState>,
   </BrowserRouter>,
   document.getElementById("root")
 );

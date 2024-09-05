@@ -34,7 +34,7 @@ const Login = () => {
     <div className="login">
       <Link to="/">
         <img
-          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png"
           alt="Amazon logo"
           className="login_logo"
         />
@@ -61,7 +61,7 @@ const Login = () => {
         <p>
           By continuing, you agree to Amazon's Conditions of Use and Privacy.
           Notice. By signing-in you also agree to the AMAZON FAKE CLONE
-          conditions of use & Sae. Please see our Privacy Notice, our cookies
+          conditions of use & Sales. Please see our Privacy Notice, our cookies
           notice and our Interest-Based Ads Notices.
         </p>
         <button className="login_registerButton" onClick={register}>

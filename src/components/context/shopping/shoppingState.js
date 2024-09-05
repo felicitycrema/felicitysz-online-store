@@ -1,4 +1,53 @@
-import { useReducer } from "react";
+// import { useReducer } from "react";
+// import ShoppingContext from "./shoppingContext";
+// import { shoppingReducer } from "./shoppingReducer";
+// export const ShoppingState = (props) => {
+//   const initialState = {
+//     basket: JSON.parse(localStorage.getItem("basket")) || [],
+//     user: null,
+//   };
+//   const [state, dispatch] = useReducer(shoppingReducer, initialState);
+//   const getBasketTotal = (basket) => {
+//     return basket?.reduce((amount, item) => {
+//       // Ensure the price is a number
+//       const price = parseFloat(item.item.price.replace("$", ""));
+//       return amount + (isNaN(price) ? 0 : price);
+//     }, 0);
+//   };
+//   const addToBasket = async (item) => {
+//     dispatch({
+//       type: "ADD_TO_BASKET",
+//       payload: item,
+//     });
+//   };
+//   const setUser = (user) => {
+//     dispatch({
+//       type: "SET_USER",
+//       payload: user,
+//     });
+//   };
+//   const removeFromBasket = (item) => {
+//     dispatch({ type: "REMOVE_FROM_BASKET", payload: item });
+//   };
+//   return (
+//     <ShoppingContext.Provider
+//       value={{
+//         basket: state.basket,
+//         user: state.user,
+//         getBasketTotal,
+//         addToBasket,
+//         setUser,
+//         removeFromBasket,
+//       }}
+//     >
+//       {props.children}
+//     </ShoppingContext.Provider>
+//   );
+// };
+
+// export default ShoppingState;
+
+import React, { useReducer } from "react";
 import ShoppingContext from "./shoppingContext";
 import { shoppingReducer } from "./shoppingReducer";
 
@@ -7,6 +56,9 @@ export const ShoppingState = (props) => {
   const [state, dispatch] = useReducer(shoppingReducer, initialState);
 
   // Selectors
+  const getBasketTotal = (basket) =>
+    basket?.reduce((amount, item) => item.item.price + amount, 0);
+
   const addToBasket = async (item) => {
     dispatch({
       type: "ADD_TO_BASKET",
@@ -14,21 +66,23 @@ export const ShoppingState = (props) => {
     });
   };
 
+    const emptyBasket = () => {
+      dispatch({ type: "EMPTY_BASKET" });
+    };
+
   const removeFromBasket = (item) => {
     dispatch({ type: "REMOVE_FROM_BASKET", payload: item });
   };
 
-  const getBasketTotal = (basket) => {
-    basket?.reduce((amount, item) => item.price + amount, 0);
-  };
-
   const setUser = (user) => {
-    console.log("User payload:", +user);
+    console.log("User payload:", user);
     dispatch({
       type: "SET_USER",
       payload: user,
     });
   };
+
+
 
   return (
     <ShoppingContext.Provider
@@ -38,9 +92,12 @@ export const ShoppingState = (props) => {
         getBasketTotal,
         addToBasket,
         setUser,
+        removeFromBasket,
+        emptyBasket,
       }}
     >
       {props.children}
     </ShoppingContext.Provider>
   );
 };
+export default ShoppingState;

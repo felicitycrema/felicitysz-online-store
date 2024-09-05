@@ -1,0 +1,572 @@
+[debug] [2024-07-28T10:58:26.564Z] ----------------------------------------------------------------------
+[debug] [2024-07-28T10:58:26.567Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-07-28T10:58:26.567Z] CLI Version:   13.14.2
+[debug] [2024-07-28T10:58:26.568Z] Platform:      win32
+[debug] [2024-07-28T10:58:26.568Z] Node Version:  v18.20.4
+[debug] [2024-07-28T10:58:26.569Z] Time:          Sun Jul 28 2024 12:58:26 GMT+0200 (South Africa Standard Time)
+[debug] [2024-07-28T10:58:26.570Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-28T10:58:26.729Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-28T10:58:26.730Z] > authorizing via signed-in user (crema.zitha@gmail.com)
+[debug] [2024-07-28T10:58:26.984Z] openjdk version "11.0.23" 2024-04-16 LTS
+
+[debug] [2024-07-28T10:58:26.986Z] OpenJDK Runtime Environment Microsoft-9394293 (build 11.0.23+9-LTS)
+OpenJDK 64-Bit Server VM Microsoft-9394293 (build 11.0.23+9-LTS, mixed mode, sharing)
+
+[debug] [2024-07-28T10:58:27.010Z] Parsed Java major version: 11
+[info] i  emulators: Starting emulators: auth, functions, firestore, hosting, pubsub, eventarc {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, hosting, pubsub, eventarc"}}
+[warn] !  hosting: The hosting emulator is configured but there is no hosting configuration. Have you run firebase init hosting? {"metadata":{"emulator":{"name":"hosting"},"message":"The hosting emulator is configured but there is no hosting configuration. Have you run \u001b[1mfirebase init hosting\u001b[22m?"}}
+[debug] [2024-07-28T10:58:27.030Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-07-28T10:58:27.030Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-07-28T10:58:27.030Z] [pubsub] Pub/Sub Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-07-28T10:58:27.030Z] assigned listening specs for emulators {"user":{"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8091}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hub":[{"address":"127.0.0.1","family":"IPv4","port":4402},{"address":"::1","family":"IPv6","port":4402}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4501}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9009}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8085}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-07-28T10:58:27.038Z] [hub] writing locator at C:\Users\21812829\AppData\Local\Temp\hub-app-dcd70.json
+[debug] [2024-07-28T10:58:27.059Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-07-28T10:58:27.059Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-07-28T10:58:27.059Z] late-assigned ports for functions and eventarc emulators {"user":{"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8091}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hub":[{"address":"127.0.0.1","family":"IPv4","port":4402},{"address":"::1","family":"IPv6","port":4402}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4501}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9009}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8085}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5002}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9301}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, hosting, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, hosting, storage, dataconnect\u001b[22m"}}
+[debug] [2024-07-28T10:58:27.065Z] defaultcredentials: writing to file C:\Users\21812829\AppData\Roaming\firebase\crema_zitha_gmail.com_application_default_credentials.json
+[debug] [2024-07-28T10:58:27.070Z] Setting GAC to C:\Users\21812829\AppData\Roaming\firebase\crema_zitha_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\21812829\\AppData\\Roaming\\firebase\\crema_zitha_gmail.com_application_default_credentials.json"}}
+[debug] [2024-07-28T10:58:27.073Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app-dcd70/adminSdkConfig [none]
+[debug] [2024-07-28T10:58:27.767Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app-dcd70/adminSdkConfig 200
+[debug] [2024-07-28T10:58:27.767Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app-dcd70/adminSdkConfig {"projectId":"app-dcd70","storageBucket":"app-dcd70.appspot.com"}
+[debug] [2024-07-28T10:58:27.792Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-07-28T10:58:27.792Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2024-07-28T10:58:27.792Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\21812829\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.19.7.jar","--host","127.0.0.1","--port",8091,"--websocket_port",9150,"--project_id","app-dcd70","--rules","C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5002"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\21812829\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.19.7.jar\",\"--host\",\"127.0.0.1\",\"--port\",8091,\"--websocket_port\",9150,\"--project_id\",\"app-dcd70\",\"--rules\",\"C:\\\\Users\\\\21812829\\\\Documents\\\\Amazon\\\\amazon-app\\\\firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5002\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2024-07-28T10:58:30.552Z] Jul 28, 2024 12:58:30 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 12:58:30 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\r\nINFO: Started WebSocket server on ws://127.0.0.1:9150\r\n"}}
+[debug] [2024-07-28T10:58:30.613Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2024-07-28T10:58:30.614Z] 127.0.0.1:8091
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8091
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8091
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8091\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\r\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8091\n\nIf you are running a Firestore in Datastore Mode project, run:\r\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8091\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\r\nDev App Server is now running.\n\r\n"}}
+[info] +  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2024-07-28T10:58:38.163Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2024-07-28T10:58:38.163Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-07-28T10:58:38.163Z] Starting Pub/Sub Emulator with command {"binary":"C:\\Users\\21812829\\.cache\\firebase\\emulators\\pubsub-emulator-0.8.14\\pubsub-emulator\\bin\\cloud-pubsub-emulator.bat","args":["--host=127.0.0.1","--port=8085"],"optionalArgs":["port","host"],"joinArgs":true,"shell":true} {"metadata":{"emulator":{"name":"pubsub"},"message":"Starting Pub/Sub Emulator with command {\"binary\":\"C:\\\\Users\\\\21812829\\\\.cache\\\\firebase\\\\emulators\\\\pubsub-emulator-0.8.14\\\\pubsub-emulator\\\\bin\\\\cloud-pubsub-emulator.bat\",\"args\":[\"--host=127.0.0.1\",\"--port=8085\"],\"optionalArgs\":[\"port\",\"host\"],\"joinArgs\":true,\"shell\":true}"}}
+[info] i  pubsub: Pub/Sub Emulator logging to pubsub-debug.log {"metadata":{"emulator":{"name":"pubsub"},"message":"Pub/Sub Emulator logging to \u001b[1mpubsub-debug.log\u001b[22m"}}
+[debug] [2024-07-28T10:58:41.294Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-07-28T10:58:41.294Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-07-28T10:58:41.294Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\21812829\\.cache\\firebase\\emulators\\ui-v1.13.0\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\21812829\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.13.0\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[info] i  functions: Watching "C:\Users\21812829\Documents\Amazon\amazon-app\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\functions\" for Cloud Functions..."}}
+[debug] [2024-07-28T10:58:41.525Z] Web / API server started at 127.0.0.1:4001
+Web / API server started at ::1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4001\nWeb / API server started at ::1:4001\n"}}
+[debug] [2024-07-28T10:58:41.526Z] Validating nodejs source
+[debug] [2024-07-28T10:58:42.861Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-07-28T10:58:42.861Z] Building nodejs source
+[debug] [2024-07-28T10:58:42.862Z] Failed to find version of module node: reached end of search path C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-07-28T10:58:42.865Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-07-28T10:58:42.875Z] Found firebase-functions binary at 'C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8115
+
+[error] Error: Cannot find module 'cor'
+Require stack:
+- C:\Users\21812829\Documents\Amazon\amazon-app\functions\index.js
+- C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (C:\Users\21812829\Documents\Amazon\amazon-app\functions\index.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\functions\\index.js',
+    'C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\functions\\node_modules\\firebase-functions\\lib\\runtime\\loader.js',
+    'C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\functions\\node_modules\\firebase-functions\\lib\\bin\\firebase-functions.js'
+  ]
+}
+
+[debug] [2024-07-28T10:58:43.822Z] Got response code 400; body Failed to generate manifest from function source: Error: Cannot find module 'cor'
+Require stack:
+- C:\Users\21812829\Documents\Amazon\amazon-app\functions\index.js
+- C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4001/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬──────────────────────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port                        │ View in Emulator UI             │
+├────────────────┼──────────────────────────────────┼─────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9009                   │ http://127.0.0.1:4001/auth      │
+├────────────────┼──────────────────────────────────┼─────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5002                   │ http://127.0.0.1:4001/functions │
+├────────────────┼──────────────────────────────────┼─────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8091                   │ http://127.0.0.1:4001/firestore │
+├────────────────┼──────────────────────────────────┼─────────────────────────────────┤
+│ Hosting        │ Failed to initialize (see above) │                                 │
+├────────────────┼──────────────────────────────────┼─────────────────────────────────┤
+│ Pub/Sub        │ 127.0.0.1:8085                   │ n/a                             │
+├────────────────┼──────────────────────────────────┼─────────────────────────────────┤
+│ Eventarc       │ 127.0.0.1:9301                   │ n/a                             │
+└────────────────┴──────────────────────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4402
+  Other reserved ports: 4501, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-07-28T11:02:42.213Z] Jul 28, 2024 1:02:42 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 1:02:42 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2024-07-28T11:02:51.958Z] Jul 28, 2024 1:02:51 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 1:02:51 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2024-07-28T11:03:02.317Z] Jul 28, 2024 1:03:02 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 1:03:02 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2024-07-28T11:03:02.359Z] Jul 28, 2024 1:03:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 1:03:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-07-28T11:03:02.582Z] Jul 28, 2024 1:03:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 1:03:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected HTTP/2 connection.\r\n"}}
+[debug] [2024-07-28T11:03:07.313Z] Jul 28, 2024 1:03:07 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 1:03:07 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2024-07-28T11:03:20.712Z] Jul 28, 2024 1:03:20 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 1:03:20 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2024-07-28T11:03:42.801Z] Functions emulator received unknown request at path /
+[debug] [2024-07-28T11:03:42.839Z] Jul 28, 2024 1:03:42 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 1:03:42 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\r\nINFO: Websocket client disconnected\r\n"}}
+[debug] [2024-07-28T11:03:42.848Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2024-07-28T11:07:14.144Z] Jul 28, 2024 1:07:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 1:07:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-07-28T11:07:15.433Z] Jul 28, 2024 1:07:15 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 1:07:15 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\r\nINFO: Websocket client disconnected\r\n"}}
+[debug] [2024-07-28T11:07:16.249Z] Jul 28, 2024 1:07:16 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 1:07:16 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\r\nINFO: Websocket client disconnected\r\n"}}
+[debug] [2024-07-28T11:07:17.040Z] Jul 28, 2024 1:07:17 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 1:07:17 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\r\nINFO: Websocket client disconnected\r\n"}}
+[debug] [2024-07-28T11:07:17.777Z] Jul 28, 2024 1:07:17 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 28, 2024 1:07:17 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\r\nINFO: Websocket client disconnected\r\n"}}
+[debug] [2024-07-28T11:25:17.936Z] File C:\Users\21812829\Documents\Amazon\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-07-28T11:25:18.950Z] Validating nodejs source
+[debug] [2024-07-28T11:25:22.144Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-07-28T11:25:22.145Z] Building nodejs source
+[debug] [2024-07-28T11:25:22.145Z] Failed to find version of module node: reached end of search path C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-07-28T11:25:22.147Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-07-28T11:25:22.156Z] Found firebase-functions binary at 'C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8409
+
+[error] TypeError: express.jason is not a function
+    at Object.<anonymous> (C:\Users\21812829\Documents\Amazon\amazon-app\functions\index.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at loadModule (C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23)
+    at C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js:56:56
+
+[debug] [2024-07-28T11:25:23.339Z] Got response code 400; body Failed to generate manifest from function source: TypeError: express.jason is not a function
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-07-28T11:25:52.196Z] File C:\Users\21812829\Documents\Amazon\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-07-28T11:25:53.209Z] Validating nodejs source
+[debug] [2024-07-28T11:25:55.282Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-07-28T11:25:55.282Z] Building nodejs source
+[debug] [2024-07-28T11:25:55.282Z] Failed to find version of module node: reached end of search path C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-07-28T11:25:55.285Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-07-28T11:25:55.296Z] Found firebase-functions binary at 'C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8475
+
+[debug] [2024-07-28T11:25:56.610Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5002/app-dcd70/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5002/app-dcd70/us-central1/api)."}}
+[debug] [2024-07-28T11:27:03.130Z] File C:\Users\21812829\Documents\Amazon\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-07-28T11:27:04.135Z] Validating nodejs source
+[debug] [2024-07-28T11:27:06.157Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-07-28T11:27:06.158Z] Building nodejs source
+[debug] [2024-07-28T11:27:06.158Z] Failed to find version of module node: reached end of search path C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-07-28T11:27:06.159Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-07-28T11:27:06.171Z] Found firebase-functions binary at 'C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8409
+
+[debug] [2024-07-28T11:27:06.758Z] File C:\Users\21812829\Documents\Amazon\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-07-28T11:27:07.527Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-07-28T11:27:07.767Z] Validating nodejs source
+[debug] [2024-07-28T11:27:09.379Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-07-28T11:27:09.379Z] Building nodejs source
+[debug] [2024-07-28T11:27:09.379Z] Failed to find version of module node: reached end of search path C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-07-28T11:27:09.381Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-07-28T11:27:09.390Z] Found firebase-functions binary at 'C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-07-28T11:27:09.405Z] File C:\Users\21812829\Documents\Amazon\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8974
+
+[debug] [2024-07-28T11:27:10.421Z] Validating nodejs source
+[debug] [2024-07-28T11:27:12.074Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-07-28T11:27:12.074Z] Building nodejs source
+[debug] [2024-07-28T11:27:12.074Z] Failed to find version of module node: reached end of search path C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-07-28T11:27:12.077Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-07-28T11:27:12.084Z] Found firebase-functions binary at 'C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-07-28T11:27:12.092Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] Serving at port 8485
+
+[debug] [2024-07-28T11:27:13.037Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-07-28T11:27:18.124Z] File C:\Users\21812829\Documents\Amazon\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-07-28T11:27:19.127Z] Validating nodejs source
+[debug] [2024-07-28T11:27:21.054Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-07-28T11:27:21.054Z] Building nodejs source
+[debug] [2024-07-28T11:27:21.054Z] Failed to find version of module node: reached end of search path C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-07-28T11:27:21.058Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-07-28T11:27:21.069Z] Found firebase-functions binary at 'C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8524
+
+[debug] [2024-07-28T11:27:22.228Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-07-28T11:27:45.444Z] File C:\Users\21812829\Documents\Amazon\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-07-28T11:27:46.448Z] Validating nodejs source
+[debug] [2024-07-28T11:27:48.369Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-07-28T11:27:48.369Z] Building nodejs source
+[debug] [2024-07-28T11:27:48.369Z] Failed to find version of module node: reached end of search path C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-07-28T11:27:48.371Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-07-28T11:27:48.380Z] Found firebase-functions binary at 'C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8934
+
+[debug] [2024-07-28T11:27:49.566Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-07-28T11:27:56.210Z] File C:\Users\21812829\Documents\Amazon\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-07-28T11:27:57.216Z] Validating nodejs source
+[debug] [2024-07-28T11:27:59.377Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-07-28T11:27:59.377Z] Building nodejs source
+[debug] [2024-07-28T11:27:59.377Z] Failed to find version of module node: reached end of search path C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-07-28T11:27:59.380Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-07-28T11:27:59.388Z] Found firebase-functions binary at 'C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8997
+
+[debug] [2024-07-28T11:28:00.583Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-07-28T11:28:00.771Z] File C:\Users\21812829\Documents\Amazon\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\21812829\\Documents\\Amazon\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-07-28T11:28:01.773Z] Validating nodejs source
+[debug] [2024-07-28T11:28:03.700Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-07-28T11:28:03.701Z] Building nodejs source
+[debug] [2024-07-28T11:28:03.701Z] Failed to find version of module node: reached end of search path C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-07-28T11:28:03.702Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-07-28T11:28:03.711Z] Found firebase-functions binary at 'C:\Users\21812829\Documents\Amazon\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8078
+
+[debug] [2024-07-28T11:28:04.663Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}

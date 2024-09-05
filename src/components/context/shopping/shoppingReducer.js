@@ -1,3 +1,4 @@
+
 export const shoppingReducer = (state, action) => {
   switch (action.type) {
     case "ADD_TO_BASKET":
@@ -41,3 +42,5 @@ export const shoppingReducer = (state, action) => {
       return state;
   }
 };
+
+export default shoppingReducer;

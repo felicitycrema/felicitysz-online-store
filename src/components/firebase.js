@@ -2,14 +2,15 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAZ-JZleYNGz1GFyRHmkW_ofIA23ZkRPGg",
-  authDomain: "my-commercial-store.firebaseapp.com",
-  projectId: "my-commercial-store",
-  storageBucket: "my-commercial-store.appspot.com",
-  messagingSenderId: "191062510139",
-  appId: "1:191062510139:web:7f07ae23ce6a315dc46a1e",
-  measurementId: "G-81ZS9VP90B",
+  apiKey: "AIzaSyCurEiHJJT_joSIOGSLHM_ava08tchyn9M",
+  authDomain: "app-dcd70.firebaseapp.com",
+  projectId: "app-dcd70",
+  storageBucket: "app-dcd70.appspot.com",
+  messagingSenderId: "557758357982",
+  appId: "1:557758357982:web:d539e68d21afd471b5bd4f",
+  measurementId: "G-7231J4RWGH",
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

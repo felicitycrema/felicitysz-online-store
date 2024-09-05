@@ -1,11 +1,10 @@
-// import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import SearchIcon from "@mui/icons-material/Search";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import ShoppingContext from "../context/shopping/shoppingContext";
 import { auth } from "../firebase";
 
@@ -60,8 +59,8 @@ const Header = () => {
       </div>
 
       <div className="header_nav">
-        <Link to={!user && "/login"}>
-          <div className="header_option" onClick={handleAuthentication}>
+        <Link to={!user && "/login"} onClick={handleAuthentication}>
+          <div className="header_option">
             <span className="header_optionOne">
               Hello {!user ? "Guest" : user.email}
             </span>
@@ -81,12 +80,14 @@ const Header = () => {
           <span className="header_optionOne">Returns</span>
           <span className="header_optionTwo">& Orders</span>
         </div>
-        <div className="header_optionBasket">
-          <span className="header_shoppingBasket">
-            <ShoppingBasketIcon />
-          </span>
-          <span className="header_basketCount">{basket?.length}</span>
-        </div>
+        <Link to="/checkout" className="option_basketLink">
+          <div className="header_optionBasket">
+            <span className="header_shoppingBasket">
+              <ShoppingBasketIcon />
+            </span>
+            <span className="header_basketCount">{basket?.length}</span>
+          </div>
+        </Link>
       </div>
     </header>
   );

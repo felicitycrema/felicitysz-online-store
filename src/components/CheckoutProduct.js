@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import ShoppingContext from "./context/shopping/shoppingContext";
 import "./CheckoutProduct.css";
-// import ShoppingContext from "../components/context/shopping/shoppingContext";
 
-const CheckoutProduct = ({ id, image, title, rating, price }) => {
+const CheckoutProduct = ({ id, image, title, rating, price, hideButton }) => {
   const shoppingContext = useContext(ShoppingContext);
   const { removeFromBasket } = shoppingContext;
 
@@ -12,7 +11,7 @@ const CheckoutProduct = ({ id, image, title, rating, price }) => {
   };
   return (
     <div className="checkout_product">
-      <img className="checkout_product_image" src="{image}" alt="" />
+      <img className="checkout_product_image" src={image} alt="" />
       <div className="checkout_product_info">
         <p className="checkout_product_title">{title}</p>
         <div className="checkout_product_rating">
@@ -26,9 +25,11 @@ const CheckoutProduct = ({ id, image, title, rating, price }) => {
           <small>$</small>
           <strong>{price}</strong>
         </p>
-        {/* {!hideButton && (
-          <button onClick={removeFromBasketHandler}>Remove from Cart</button>
-        )} */}
+        <div className="remove_from_cart_button">
+          {!hideButton && (
+            <button onClick={removeFromBasketHandler}>Remove from Cart</button>
+          )}
+        </div>
       </div>
     </div>
   );
