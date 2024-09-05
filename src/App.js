@@ -8,6 +8,7 @@ import Products from "./components/Products";
 import Login from "./components/Login";
 import ProductDetails from "./components/ProductDetails";
 import ShoppingContext from "./components/context/shopping/shoppingContext";
+import CheckoutProduct from "./components/CheckoutProduct";
 import { auth } from "./components/firebase";
 
 const App = () => {
@@ -27,8 +28,8 @@ const App = () => {
 
   return (
     <>
+      <Header />
       <div className="App">
-        <Header />
         <main>
           <Switch>
             <Route path="/" exact>
@@ -43,8 +44,11 @@ const App = () => {
             <Route path="/products/:id" exact>
               <ProductDetails />
             </Route>
-            <Route path="/login">
-              <Login />
+            <Route path="/checkout_product">
+              <CheckoutProduct />
+              <Route path="/login">
+                <Login />
+              </Route>
             </Route>
             <Route path="*">
               <NotFound />

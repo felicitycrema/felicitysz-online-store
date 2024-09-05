@@ -14,12 +14,16 @@ export const ShoppingState = (props) => {
     });
   };
 
+  const removeFromBasket = (item) => {
+    dispatch({ type: "REMOVE_FROM_BASKET", payload: item });
+  };
+
   const getBasketTotal = (basket) => {
     basket?.reduce((amount, item) => item.price + amount, 0);
   };
 
   const setUser = (user) => {
-    console.log("User payload:", + user);
+    console.log("User payload:", +user);
     dispatch({
       type: "SET_USER",
       payload: user,
