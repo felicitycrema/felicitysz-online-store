@@ -1,0 +1,78 @@
+[debug] [2024-09-08T20:50:54.946Z] ----------------------------------------------------------------------
+[debug] [2024-09-08T20:50:54.948Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\21812829\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-08T20:50:54.948Z] CLI Version:   13.14.2
+[debug] [2024-09-08T20:50:54.949Z] Platform:      win32
+[debug] [2024-09-08T20:50:54.949Z] Node Version:  v18.20.4
+[debug] [2024-09-08T20:50:54.950Z] Time:          Sun Sep 08 2024 22:50:54 GMT+0200 (South Africa Standard Time)
+[debug] [2024-09-08T20:50:54.950Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-08T20:50:55.011Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-08T20:50:55.012Z] > authorizing via signed-in user (crema.zitha@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\21812829\Documents\Amazon\amazon-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-08T20:52:06.468Z] Using project from CLI flag: app-dcd70
+[debug] [2024-09-08T20:52:06.470Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app-dcd70 [none]
+[debug] [2024-09-08T20:52:07.171Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app-dcd70 200
+[debug] [2024-09-08T20:52:07.171Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app-dcd70 {"projectId":"app-dcd70","projectNumber":"557758357982","displayName":"amazon-app","name":"projects/app-dcd70","resources":{"hostingSite":"app-dcd70","realtimeDatabaseInstance":"app-dcd70-default-rtdb"},"state":"ACTIVE","etag":"1_3a57b3d3-0193-428b-8b60-c8b7c525ad29"}
+[info] i  Using project app-dcd70 (amazon-app) 
+[info] 
+=== Firestore Setup
+[debug] [2024-09-08T20:52:07.178Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/app-dcd70/services/firestore.googleapis.com [none]
+[debug] [2024-09-08T20:52:07.178Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/app-dcd70/services/firestore.googleapis.com x-goog-quota-user=projects/app-dcd70
+[debug] [2024-09-08T20:52:09.097Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/app-dcd70/services/firestore.googleapis.com 200
+[debug] [2024-09-08T20:52:09.097Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/app-dcd70/services/firestore.googleapis.com [omitted]
+[debug] [2024-09-08T20:52:09.097Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/app-dcd70/databases/(default) [none]
+[debug] [2024-09-08T20:52:10.995Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/app-dcd70/databases/(default) 200
+[debug] [2024-09-08T20:52:10.996Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/app-dcd70/databases/(default) {"name":"projects/app-dcd70/databases/(default)","uid":"d391d39d-508b-4348-8839-b2005004fa38","createTime":"2024-07-28T09:38:51.901286Z","updateTime":"2024-07-28T09:38:51.901286Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-09-08T19:52:12.679366Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IPfkt4SdtIgDMPjU577iyYcD"}
+[debug] [2024-09-08T20:52:10.996Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-09-08T20:52:10.996Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-08T20:52:10.996Z] > authorizing via signed-in user (crema.zitha@gmail.com)
+[debug] [2024-09-08T20:52:10.996Z] [iam] checking project app-dcd70 for permissions ["firebase.projects.get"]
+[debug] [2024-09-08T20:52:10.997Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/app-dcd70:testIamPermissions [none]
+[debug] [2024-09-08T20:52:10.997Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/app-dcd70:testIamPermissions x-goog-quota-user=projects/app-dcd70
+[debug] [2024-09-08T20:52:10.997Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/app-dcd70:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-09-08T20:52:12.746Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/app-dcd70:testIamPermissions 200
+[debug] [2024-09-08T20:52:12.747Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/app-dcd70:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-09-08T20:52:30.897Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/app-dcd70/releases pageSize=10&pageToken=
+[debug] [2024-09-08T20:52:31.554Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/app-dcd70/releases 200
+[debug] [2024-09-08T20:52:31.554Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/app-dcd70/releases {"releases":[{"name":"projects/app-dcd70/releases/cloud.firestore","rulesetName":"projects/app-dcd70/rulesets/5f49d6ce-d187-4a1a-99da-d6e07fca6f9f","createTime":"2024-07-28T09:38:59.332649Z","updateTime":"2024-07-28T09:38:59.332649Z"}]}
+[debug] [2024-09-08T20:52:31.555Z] Found ruleset: projects/app-dcd70/rulesets/5f49d6ce-d187-4a1a-99da-d6e07fca6f9f
+[debug] [2024-09-08T20:52:31.555Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/app-dcd70/rulesets/5f49d6ce-d187-4a1a-99da-d6e07fca6f9f [none]
+[debug] [2024-09-08T20:52:32.621Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/app-dcd70/rulesets/5f49d6ce-d187-4a1a-99da-d6e07fca6f9f 200
+[debug] [2024-09-08T20:52:32.621Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/app-dcd70/rulesets/5f49d6ce-d187-4a1a-99da-d6e07fca6f9f [omitted]
+[debug] [2024-09-08T20:52:33.100Z] Error: ENOENT: no such file or directory, open 'C:\Users\21812829\Documents\Amazon\amazon-app\	'
+    at Object.openSync (node:fs:596:3)
+    at Object.writeFileSync (node:fs:2322:35)
+    at Object.createFileSync (C:\Users\21812829\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:63:6)
+    at Config.writeProjectFile (C:\Users\21812829\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:159:12)
+    at C:\Users\21812829\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\firestore\rules.js:50:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async doSetup (C:\Users\21812829\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\firestore\index.js:33:5)
+    at async init (C:\Users\21812829\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:40:9)
+[error] 
+[error] Error: An unexpected error has occurred.
