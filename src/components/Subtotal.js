@@ -1,33 +1,3 @@
-// import React, { useContext } from "react";
-// import "./Subtotal.css";
-// import ShoppingContext from "./context/shopping/shoppingContext";
-// const Subtotal = () => {
-//   const shoppingContext = useContext(ShoppingContext);
-//   const { basket, getBasketTotal } = shoppingContext;
-//   console.log(getBasketTotal(basket));
-//   const handleTest = (e) => {
-//     e.preventDefault();
-//     console.log(getBasketTotal([]));
-//   };
-
-//   return (
-//     <div className="subtotal">
-//       <p>
-//         Subtotal ({basket?.length} items:{" "}
-//         <strong>${getBasketTotal(basket)}</strong>)
-//       </p>
-//       <small className="subtotal_gift">
-//         <input type="checkbox" />
-//         This order contains a gift
-//       </small>
-//       <button >Test Total</button>
-//       <button>Proceed to checkout</button>
-//     </div>
-//   );
-// };
-
-// export default Subtotal;
-
 import React, { useContext } from "react";
 import CurrencyFormat from "react-currency-format";
 import "./Subtotal.css";
@@ -39,12 +9,7 @@ const Subtotal = () => {
   const shoppingContext = useContext(ShoppingContext);
   const { basket, getBasketTotal } = shoppingContext;
 
-  // const handleTest = (e) => {
-  //   e.preventDefault();
-  //   console.log(getBasketTotal(basket));
-  // };
-
-  return (
+   return (
     <div className="subtotal">
       <CurrencyFormat
         renderText={(value) => (
@@ -71,6 +36,6 @@ const Subtotal = () => {
       </button>
     </div>
   );
-};
+}; 
 
 export default Subtotal;

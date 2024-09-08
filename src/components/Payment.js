@@ -110,7 +110,7 @@ const Payment = () => {
             <h3>Payment Method</h3>
           </div>
           <div className="payment_details">
-            {/* Strip integrationg*/}
+            {/* Strip integration*/}
             <form onSubmit={handleSubmit}>
               <CardElement onChange={handleChange} />
               <div className="payment_price__container">
