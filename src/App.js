@@ -81,7 +81,7 @@ const App = () => {
               <Login />
             </Route>
 
-            <Route path="*">
+            <Route path="/*">
               <NotFound />
             </Route>
           </Switch>
